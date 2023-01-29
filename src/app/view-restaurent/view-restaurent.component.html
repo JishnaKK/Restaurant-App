@@ -1,0 +1,48 @@
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5
+  ">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{restbody.photograph1}}" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">{{restbody.id}}</div>
+              <h1 class="display-5 fw-bolder">{{restbody.name}}</h1>
+              <div class="fs-5 mb-5">
+                  <div>Location</div>
+              <p class="lead">{{restbody.address}}</p>
+               <span>Near To: <span style="font-weight: 200;">{{restbody.neighborhood}}</span></span>
+              </div>
+<!-- operating houres -->
+             <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Operating hours
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Operating Hours</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="modal-body">
+          <li class="list-group-item">Monday:  {{restbody.operating_hours.Monday}}</li>
+          <li class="list-group-item">Tuesday: {{restbody.operating_hours.Tuesday}}</li>
+          <li class="list-group-item">Wednesday: {{restbody.operating_hours.Wednesday}}</li>
+          <li class="list-group-item">Thursday: {{restbody.operating_hours.Thursday}}</li>
+          <li class="list-group-item">Friday:   {{restbody.operating_hours.Friday}}</li>
+          <li class="list-group-item">Saturday: {{restbody.operating_hours.Saturday}}</li>
+
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+      </div>
+  </div>
+</section>
